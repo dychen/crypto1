@@ -10,8 +10,6 @@ filename = TARGET_FILE
 
 def chash(f, size):
     fp = size / BLOCKSIZE * BLOCKSIZE
-    if fp == BLOCKSIZE:
-        fp -= BLOCKSIZE
     block_hash = ''
     # Read through the file backwards
     while fp >= 0:
